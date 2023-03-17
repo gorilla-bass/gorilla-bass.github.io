@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleplugin.css">
+    <link rel="stylesheet" href="./css/responsiveplugin.css">
+    <title>PRIMITIVE</title>
+    <script language="JavaScript">
+
+        function Exibe_Resposta(x)
+        {
+            var resposta = document.getElementById(x);
+            
+            if (resposta.className.indexOf("exibida") == -1) 
+                resposta.className = resposta.className.replace("escondida","exibida");
+            else
+                resposta.className = resposta.className.replace("exibida","escondida");
+        }
+        
+        function Troca_cor()
+        {
+            document.bgColor=document.getElementById("cor").value;
+        }
+    </script>
+
+    <script language="JavaScript">
+        document.addEventListener('play', function(e){  
+            var audios = document.getElementsByTagName('audio');  
+            for(var i = 0, len = audios.length; i < len;i++){  
+                if(audios[i] != e.target){  
+                    audios[i].pause();  
+                }  
+            }  
+        }, true);
+    </script>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        
+        <div class="topconteudo">
+            <div>
+            <a href="index.html" type="button" class="cta">Voltar</a>
+            </div>
+            <div class="logo">
+                <h3>Gorilla Bass</h3>
+                <img src="./img/logotipo.png" alt="logotipo gorilla bass">
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+
+        <div class="plugin-box">
+            <h2>Primitive</h2>
+
+            <div class="container pri">
+                
+            <img class="plugin-img prim" src="img/plugin3.jpeg">
+            <div class="containerplay">
+            <div class="introp">
+                <h3>De o Play</h3>
+                <img src="./img/Play1.svg" alt="play icon">
+            </div>
+
+            <div class="playlist">
+                <ol>
+
+                    <li><h3>Bass DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/PRIMITIVE/Bass DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Bass SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/PRIMITIVE/Bass FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Guitar 01 DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/PRIMITIVE/Guitar01 DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Guitar 01 SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/PRIMITIVE/Guitar01 FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Guitar 02 DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/PRIMITIVE/Guitar02 DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Guitar 02 SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/PRIMITIVE/Guitar02 FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>E. Piano DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/PRIMITIVE/Rhodes DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>E. Piano SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/PRIMITIVE/Rhodes FX.wav"/>
+                    </audio>
+                    </li>                   
+                </ol>
+            </div>
+            </div>
+            </div>
+            <div class="desc">
+                    <span onClick="Exibe_Resposta('Resp1')" class="pergunta">Descrição</span>
+                    <article id="Resp1" class="escondida">
+                        <p>
+                            Capaz de tudo, desde overdrive leve até distorção total, o PRIMITIVE é um processador 
+                            de estilo analógico inspirado nos famosos pedais de overdrive de guitarra. Mas não é apenas 
+                            para guitarras: seu som é filtrado para calor, em vez de altas frequências estridentes, e soa 
+                            muito bem em vocais, piano, sintetizadores, bateria, baixo - você escolhe. Use-o e abuse dele 
+                            em qualquer entrada que você acha que pode se beneficiar de alguma vantagem e atitude extra.
+                        </p>
+                    </article>
+            </div>
+        
+        </div>
+
+    </main>
+    
+</body>
+
+</head>
+</html>

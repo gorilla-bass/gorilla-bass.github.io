@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleplugin.css">
+    <link rel="stylesheet" href="./css/responsiveplugin.css">
+    <title>GORILLA CAVE</title>
+    <script language="JavaScript">
+
+        function Exibe_Resposta(x)
+        {
+            var resposta = document.getElementById(x);
+            
+            if (resposta.className.indexOf("exibida") == -1) 
+                resposta.className = resposta.className.replace("escondida","exibida");
+            else
+                resposta.className = resposta.className.replace("exibida","escondida");
+        }
+        
+        function Troca_cor()
+        {
+            document.bgColor=document.getElementById("cor").value;
+        }
+    </script>
+
+    <script language="JavaScript">
+        document.addEventListener('play', function(e){  
+            var audios = document.getElementsByTagName('audio');  
+            for(var i = 0, len = audios.length; i < len;i++){  
+                if(audios[i] != e.target){  
+                    audios[i].pause();  
+                }  
+            }  
+        }, true);
+    </script>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        
+        <div class="topconteudo">
+            <div>
+            <a href="index.html" type="button" class="cta">Voltar</a>
+            </div>
+            <div class="logo">
+                <h3>Gorilla Bass</h3>
+                <img src="./img/logotipo.png" alt="logotipo gorilla bass">
+
+            </div>            
+        </div>
+    </header>
+
+    <main>
+
+        <div class="plugin-box">
+
+            <h2>Monkey Smash</h2>
+            <div class="container">
+            <img class="plugin-img" src="img/plugin2.jpeg">
+            <div class="containerplay">
+            <div class="introp">
+                <h3>De o Play</h3>
+                <img src="./img/Play1.svg" alt="play icon">
+            </div>
+
+            <div class="playlist">
+                <ol>
+                    <li><h3>Bass DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/SMASH/BASS DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Vass SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/SMASH/BASS FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Drum Room DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/SMASH/DRUM ROOM DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Drum Room SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/SMASH/DRUM ROOM FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Hi-Hat DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/SMASH/HIHAT DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Hi-Hat SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/SMASH/HIHAT FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Vocal DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/SMASH/VOCAL DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Vocal SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/SMASH/VOCAL FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                </ol>
+            </div>
+            </div>
+            </div>
+
+            <div class="desc">
+                    <span onClick="Exibe_Resposta('Resp1')" class="pergunta">Recursos</span>
+                    <article id="Resp1" class="escondida">
+                        <p>
+                            O Monkey Smash é modelado em um compressor baseado em tubo, com fio manual, 
+                            originalmente produzido no início dos anos 1960. Inicialmente 
+                            planejado para uso em transmissão, o original usava um atenuador óptico eletroluminescente 
+                            chamado “T4” para redução de ganho. Ao contrário de muitos outros designs, os 
+                            circuitos eletroluminescentes não adicionam distorção quando modulam o som. (Os 
+                            tubos, no entanto, sim, e nos certificamos de modelar essa distorção.) Além disso, 
+                            a inspiração para o ataque dependente de frequência e a velocidade de resposta desse clássico o 
+                            tornaram um favorito instantâneo dos engenheiros de áudio. No entanto, muitos consideram 
+                            que sua característica mais exclusiva é a liberação multiestágio dependente do programa, 
+                            que foi obtida usando uma célula fotoelétrica de 2 estágios. Com uma resposta de frequência 
+                            de 30Hz a 15kHz (+/- 1dB) e menor que 0,5% THD, o original fornecia até 40dB de limitação de ganho.
+                        </p>
+                    </article>
+            </div>
+        
+        </div>
+
+    </main>
+    
+</body>
+
+</head>
+</html>

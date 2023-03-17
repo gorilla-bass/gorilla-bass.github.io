@@ -1,0 +1,97 @@
+/* Media Query */
+
+@media only screen and (min-width: 500px) {
+
+    .container{
+        width: 95%;
+    }
+    
+    .logo img{
+        height: 6vh;
+    }
+    
+    .logo h3{
+        font-size: 2em;
+    }
+
+    .cta{
+        font-size: 1.5em;
+    }
+
+    .plugin-box img{
+        width: 100%;
+    }
+
+    .introp img{
+        width: 5vh;
+    }
+
+    .introp h3{    
+        color: white;
+        font-size: 4em;
+    }
+
+    .desc{
+        width: 95%;
+        text-align: center;
+    }
+    
+    audio{
+        width: 70vw;
+    }
+    
+    .prim{
+        align-self: center;
+        max-width: 550px;
+    }
+
+}
+
+@media only screen and (min-width: 811px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .logo img{
+    height: 8vh;
+   }
+   .logo h3{
+    font-size: 2.2em;
+   }
+
+   .cta{
+    font-size: 1.5em;
+   }
+
+   .plugin-box img{
+    width: 100%;
+}
+
+.introp img{
+    width: 6vh;
+}
+
+.introp h3{
+    
+    color: white;
+    font-size: 4em;
+}
+
+.desc{
+    width: 70%;
+    text-align: center;
+}
+
+audio{
+    width: 60vw;
+}
+
+.prim{
+    align-self: center;
+    max-width: 550px;
+}
+
+}
+

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@font-face {
+    font-family: Blackfuture;
+    src: url(../fonts/Black\ Future.ttf);
+}
+
+@font-face {
+    font-family: Bellasmith;
+    src: url(../fonts/Bellasmith\ Script.ttf);
+}
+ 
+a{
+    text-decoration: none;
+}
+
+/*header*/
+
+header{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 1vh;
+}
+
+.logo img{
+    height: 5vh;
+}
+
+.logo h3{
+    color: red;
+    margin-right: 2vh;
+    font-size: 2vh;
+    font-family: Blackfuture;
+    letter-spacing: 0.05rem;
+    background-image: linear-gradient(to right, #ff0032, #3200FF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.topconteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta {
+    font-family: Poppins;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1vh 2vh;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    margin-left: 1vh;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    transition-property: background-color, color;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.cta:hover{
+    color: white;
+    transform: translateY(-1px);
+    background-color: #ff0032;
+    background-image: linear-gradient(to left, #ff0032, #3200FF);
+}
+
+/*MAIN*/
+
+.plugin-box img{
+    width: 100%;
+    margin-top: 2vh;   
+    margin-bottom: 2vh;    
+}
+
+.plugin-box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plugin-box h2 {
+    font-family: Blackfuture;
+    font-size: 3rem;
+    padding: 1vh;
+    text-align: center;
+    height: fit-content;
+    width: 100%;  
+    background-image: linear-gradient(to right, #ff0032, #3200FF); 
+    color: #ffffff;       
+}
+
+.pri{
+    width: 100%;
+}
+
+h3{
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.introp{
+    display: flex;
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.introp h3{
+    
+    color: white;
+    font-size: 2.5rem;
+}
+
+.introp img{
+    width: 4vh;
+}
+
+.playlist{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;  
+    color: #ffffff;   
+    background-color: #000000;      
+}
+
+audio{
+    background-image: linear-gradient(to left, #ff0032, #3200FF);
+    border-radius: 20px;
+}
+
+ol{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.escondida{
+    visibility: hidden;
+    height:0px;
+}
+
+.exibida{
+    visibility: visible;
+    height:auto;
+}
+
+[id*="Resp"]
+{
+    width:100%;
+}
+
+.pergunta{
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.desc span{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.desc
+{
+    padding: 1vh;
+    color: white;
+    background-color: #ff0032;
+    text-indent: 2.5%;
+    text-align: justify;
+    margin: auto;
+    width: 100%;
+}
+
+.desc h4{
+    font-weight: bolder;
+    font-family: Bellasmith;
+}
+
+p{
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}

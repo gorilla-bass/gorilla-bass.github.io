@@ -1,0 +1,237 @@
+/* Media Query */
+
+@media only screen and (min-width: 500px) {
+
+    /*header*/
+
+    .logo h3{
+        margin-top: 2vh;
+        font-size: 2em;
+    }
+
+    .logo  img {
+        margin-top: 2vh;
+        height: 8vh;
+    }
+
+    /* Seção de apresentação */
+
+    #presentation h1{
+        font-size: 110px;
+        line-height: 150px;
+    }
+    #presentation .cta{
+        border: 3px solid rgb(255, 255, 255);
+        font-size: 1.6em;
+        letter-spacing: .5rem;
+        margin-top: 15vh;
+        border-radius: 10px;
+    }
+
+    /* Seção de Plugin */
+    #square{
+        height: 2.2em;
+    }
+
+    .section-title {
+        font-size: 3em;
+    }
+
+    #text--medium{
+        font-size: 1.3em;
+    }
+
+    .text--medium{
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+
+    .title{
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    /*Seção Carrosel*/
+
+    .titulovermelho{
+        font-size: 3em;
+    }
+
+    /*ESPACO PARA SEÇÃO SOBRE A EMPRESA*/
+
+    .sobre h2{
+        font-size: 3em;
+    }
+    
+    .sobre span{
+        height: 2.2em;
+    }
+
+    .sobrenos{
+        font-size: 1.7em;
+    }
+
+    #nos .cta{
+        font-size: 1.2em;
+    }
+
+    /* espaço para forms */
+
+    .introcontat span{
+        height: 2.2em;
+    }
+
+    .txtform h2{
+        font-size: 3em;
+    }
+
+    form input{
+        width: 450px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1220px) {
+    /*~~~~~~HEADER~~~~~~~~~~~*/
+    #menu-lateral li{
+        font-size: 1.8em;
+        line-height: 10vh;
+    }
+
+    #btnHamburg{
+        height: 8vh;
+        width: 8vh;
+        margin: 2vh;
+    }
+
+    #abremenu{
+        height: 4vh;
+        width: 4vh;
+    }
+    #xfecha{
+        height: 3.5vh;
+    }
+
+    .logo h3{
+        font-size: 2.5em;
+    }
+
+    .logo  img{
+        height: 10vh;
+        margin: 2vh;
+    }
+
+    /* Seção de apresentação */
+
+    #presentation h1{
+        font-size: 7em;
+        line-height: 16vh;
+    }
+
+    #presentation .cta{
+        font-size: 1.6em;
+    }
+
+    /* Seção de Plugin */
+
+    #square{
+        height: 2.8em;
+    }
+
+    .section-title{
+        font-size: 4em;
+    }
+
+    #text--medium{
+        font-size: 1.6em;
+        line-height: 3vh;
+    }
+
+    /*Seção Carrosel*/
+
+    .titulovermelho{
+            font-size: 5em;
+        }
+    /*ESPACO PARA SEÇÃO SOBRE A EMPRESA*/
+
+    .sobre h2{
+        font-size: 4em;
+    }
+
+    .sobre span{
+        height: 2.8em;
+    }
+
+    .imgform{
+        visibility: visible;
+        height: 55vh;
+        width: 30vw;
+        object-fit: cover;
+        float: right;
+        border-radius: 10px;
+    }
+
+    .ctsobre{
+        display: flex;
+        align-items:  center;
+    }
+
+    .sobrenos{
+        font-size: 1.6em;
+        margin-top: 2vh;
+        margin-right: 1vh;
+    }
+
+    #nos .cta{
+        font-size: 1.5em;
+        margin-top: 5vh;
+    }
+
+    /* espaço para forms */
+
+    .ctform{
+        display: flex;
+        padding: 0.5vh;
+        align-items: center;
+    }
+
+    form input{
+        width: 600px;
+        font-size: 1.5em;
+    }
+
+    /*#paraform{
+        height: 75vh;
+    }*/
+
+    .dform{
+        width: 100%;
+    }
+
+    /*Espaço para o mapa*/
+
+    iframe{
+        align-self: center;
+        height: 50vh;
+        width: 70%;
+    }
+
+    .txtmap{
+        font-size: 3em;
+    }
+
+    #cticon p{
+        font-size: 3em;
+        padding-bottom: 1vh;
+    }
+
+    .icone{
+        width: 8vh;
+        height: 8vh;
+    }
+
+
+}
+

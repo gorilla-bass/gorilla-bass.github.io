@@ -1,0 +1,23 @@
+/* Keyframes */
+
+@keyframes text_reveal{
+    100%{
+        background-image: linear-gradient(to bottom, #ff0032, #3200FF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: white;
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{
+        background-image: linear-gradient(to bottom, #ff0032, #3200FF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: rgb(255, 255, 255);
+        font-weight: 500px;
+        margin-top: -4.5vh;
+    }
+}

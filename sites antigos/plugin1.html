@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/keyframes.css">
+    <title>Plugin 1</title>
+    <style>
+        html {
+            height: 100%;
+            background:linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 0, 255));
+        }
+        body {
+            background-color: rgba(0, 0, 0, 0.75);
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        .plugin-img {
+            width: 600px;
+            height: 400px;
+        }
+        #plugin {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .plugin-box{
+            padding: 24px;
+            border-radius: 24px;
+            background-color: white;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        .text {
+            margin-top: 20px;
+            width: 600px;
+            font-size: 1.2em;
+        }
+        .cta {
+            display: inline-block;
+            padding: 10px 30px;
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            border: 2px solid rgb(255, 255, 255);
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            margin-top: 20px;
+            transition: 0.5s ease;
+            transition-property: background-color, color;
+            border-radius: 10px;
+            width: fit-content;
+        }
+        .cta:hover{
+            color: white;
+            transform: translateY(-1px);
+            background-color: #ff0032;
+            background-image: linear-gradient(to left, #ff0032, #3200FF);
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topconteudo">
+            <div class="logo">
+                <img src="./img/logotipo.png" alt="logotipo gorilla bass">
+            </div>
+            <a href="index.html" type="button" class="cta">Voltar</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="plugin">
+            <div class="plugin-box">
+                <div class="title">
+                    <h2>Plugin 1</h2>
+                </div>
+                <div class="plugin-img-playlist-row">
+                    <div class="plugin-img-box">
+                        <img class="plugin-img" src="img/party-g039b77659_1920.jpg">
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, voluptates, sed, excepturi aut atque odio magni deleniti debitis dolores facilis repudiandae mollitia quas magnam nisi doloremque ad quod quos. Dolorum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati, sit ipsam ipsa facilis itaque saepe, quo optio odio rerum praesentium quibusdam natus sapiente qui fuga amet asperiores eos. Molestias?
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

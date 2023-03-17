@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleplugin.css">
+    <link rel="stylesheet" href="./css/responsiveplugin.css">
+    <title>GORILLA CAVE</title>
+      <script language="JavaScript">
+
+        function Exibe_Resposta(x)
+        {
+            var resposta = document.getElementById(x);
+            
+            if (resposta.className.indexOf("exibida") == -1) 
+                resposta.className = resposta.className.replace("escondida","exibida");
+            else
+                resposta.className = resposta.className.replace("exibida","escondida");
+        }
+        
+        function Troca_cor()
+        {
+            document.bgColor=document.getElementById("cor").value;
+        }
+    </script>
+
+    <script language="JavaScript">
+        document.addEventListener('play', function(e){  
+            var audios = document.getElementsByTagName('audio');  
+            for(var i = 0, len = audios.length; i < len;i++){  
+                if(audios[i] != e.target){  
+                    audios[i].pause();  
+                }  
+            }  
+        }, true);
+    </script>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">        
+        <div class="topconteudo">
+            <div>
+            <a href="index.html" type="button" class="cta">Voltar</a>
+            </div>
+            <div class="logo">
+                <h3>Gorilla Bass</h3>
+                <img src="./img/logotipo.png" alt="logotipo gorilla bass">
+            </div>            
+        </div>
+    </header>
+
+    <main>
+
+        <div class="plugin-box">
+
+            <h2>Gorilla Cave</h2>
+            <div class="container">
+            <img class="plugin-img" src="img/plugin4.jpeg">
+            <div class="containerplay">
+            <div class="introp">
+                <h3>De o Play</h3>
+                <img src="./img/Play1.svg" alt="play icon">
+            </div>
+
+            <div class="playlist">
+                <ol>
+
+                    <li><h3>Guitar DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/GORILLA CAVE/Acoustic Guitar DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Guitar SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/GORILLA CAVE/Acoustic Guitar FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Synth DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/GORILLA CAVE/Lead Synth DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Synth SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/GORILLA CAVE/Lead Synth FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Piano DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/GORILLA CAVE/PianoStrings DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Piano SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/GORILLA CAVE/PianoStrings FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Vocal DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/GORILLA CAVE/Vocal DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Vocal SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/GORILLA CAVE/Vocal FX.wav"/>
+                    </audio>
+                    </li>
+                    
+                </ol>
+            </div>
+            </div>
+            </div>
+
+            <div class="desc">
+                    <span onClick="Exibe_Resposta('Resp1')" class="pergunta">Recursos</span>
+                    <article id="Resp1" class="escondida">
+                        <p>
+                            <h4>EQ</h4> Um equalizador de quatro bandas, com cada ponto de corte inspirado em uma unidade de 
+                            hardware clássica.
+                        </p><br>
+                        <p>
+                            <h4>Reverb</h4> 18 reverbs clássicos em um plugin, com um pouco de 
+                            EQ, compressão, phasing e distorção.
+                        </p><br>
+                        <p>
+                            <h4>Delay</h4> Um delay multi-efeito 
+                            com phaser, reverb, distorção e harmonizador para maior profundidade e groove.
+                        </p><br>
+                        <p>
+                            <h4>Distortion</h4> Uma deliciosa distorção de estilo crocante para 
+                            aqueles momentos em que você precisa se deitar e se sujar.
+                        </p><br>
+                        <p>
+                            <h4>Triple D</h4> 3 “Ds” (DeEsser, DeHarsher, DeBoxy) que facilitam a remoção 
+                            dessas frequências desagradáveis – até as mais dolorosas.
+                        </p><br>
+                        <p>
+                            <h4>Tone Shaper</h4> Compressão paralela por quatro faixas de frequência mais EQ e 
+                            "ingredientes secretos" para maior corpo e riqueza.
+                        </p><br>
+                        </p>
+                    </article>
+            </div>     
+        </div>
+    </main> 
+</body>
+
+</head>
+</html>

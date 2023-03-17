@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Blackfuture;
+    src: url(../fonts/Black\ Future.ttf);
+}
+
+@font-face {
+    font-family: Bellasmith;
+    src: url(../fonts/Bellasmith\ Script.ttf);
+}
+
+body{
+    background-image: url(../img/bg22.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 100vh;*/
+}
+
+#logotipo{
+    width: 5vh;
+}
+
+#logonome{
+    font-family: Blackfuture;
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom, #ff0032, #3200FF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.corbtn{
+    color: white;
+    border: 1px solid white;
+}
+
+.corbtn:hover{
+    background-image: linear-gradient(to right, #ff0032, #3200FF);
+    border: 1px solid white;
+    color: white;
+    transform: translateY(-1px);
+    background-color: #ff0032;
+    
+}
+
+.branco{
+    color:#ffffff;
+}
+
+.vermelho{
+    color:#ff0032;
+}
+
+.bgvermelho{
+    background-color:#ff0032;
+}
+
+.letraum{
+    font-family: Blackfuture;
+}
+
+.titulomaior{
+    font-size: 3rem;
+    margin-top: 25px;
+    margin-bottom: 5vh;
+}
+
+.caber{
+    word-wrap: break-word;
+    background-color: rgba(120,120,120,0.3);
+    border-radius: 20px;
+    padding: 1vh;
+}
+
+.caber:hover{
+    background-color: #ff0032;
+}
+
+li{
+    list-style: none;
+}
+
+audio{
+    width: 90%;
+    background-image: linear-gradient(to left, #ff0032, #3200FF);
+    border-radius: 20px;
+}
+
+.margem{
+    margin-top:5vh;
+}
+
+.margemsm{
+    margin-top: 1vh;
+}
+
+.pad{
+    padding: 1vh;
+}
+
+.bgtrans{
+    background-color: rgba(120,120,120,0.3);
+}
+
+.card:hover{
+    background-color: #ff0032;
+}
+
+.letradois{
+    font-family: Bellasmith;
+}

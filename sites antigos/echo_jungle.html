@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleplugin.css">
+    <link rel="stylesheet" href="./css/responsiveplugin.css">
+    <title>ECHO JUNGLE</title>
+    <script language="JavaScript">
+
+        function Exibe_Resposta(x)
+        {
+            var resposta = document.getElementById(x);
+            
+            if (resposta.className.indexOf("exibida") == -1) 
+                resposta.className = resposta.className.replace("escondida","exibida");
+            else
+                resposta.className = resposta.className.replace("exibida","escondida");
+        }
+        
+        function Troca_cor()
+        {
+            document.bgColor=document.getElementById("cor").value;
+        }
+    </script>
+
+    <script language="JavaScript">
+        document.addEventListener('play', function(e){  
+            var audios = document.getElementsByTagName('audio');  
+            for(var i = 0, len = audios.length; i < len;i++){  
+                if(audios[i] != e.target){  
+                    audios[i].pause();  
+                }  
+            }  
+        }, true);
+    </script>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="topconteudo">
+            <div>
+            <a href="index.html" type="button" class="cta">Voltar</a>
+            </div>
+            <div class="logo">
+                <h3>Gorilla Bass</h3>
+                <img src="./img/logotipo.png" alt="logotipo gorilla bass">
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="plugin-box">
+            <h2>Echo Jungle</h2>
+
+            <div class="container">
+
+            <img class="plugin-img" src="img/plugin1.jpeg">
+            <div class="containerplay">
+            <div class="introp">
+                <h3>De o Play</h3>
+                <img src="./img/Play1.svg" alt="play icon">
+            </div>
+
+            <div class="playlist">
+               
+                <ol>
+
+                    <li><h3>Guitar DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/ECHO JUNGLE/guitar DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Guitar SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/ECHO JUNGLE/guitar fx.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Shaker DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/ECHO JUNGLE/shaker DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Shaker SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/ECHO JUNGLE/shaker fx.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Snare DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/ECHO JUNGLE/snare DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Snare SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/ECHO JUNGLE/snare fx.wav"/>
+                    </audio>
+                    </li>
+                    
+                    <li><h3>Vocal DRY</h3></li>
+                        <li><audio controls>
+                            <source src="audio/ECHO JUNGLE/vocal DRY.wav"/>
+                        </audio>
+                    </li>
+
+                    <li><h3>Vocal SFX</h3></li>
+                    <li><audio controls>
+                        <source src="audio/ECHO JUNGLE/vocal fx.wav"/>
+                    </audio>
+                    </li>
+                    
+                </ol>
+            </div>
+            </div>
+            </div>
+            <div class="desc">
+                    <span onClick="Exibe_Resposta('Resp1')" class="pergunta">Recursos</span>
+                    <article id="Resp1" class="escondida">
+                        <p>
+                            <p>
+                                <h4>Tape Delay Effect</h4> Certos vintage tape delays ofereciam uma opção para alterar o tempo de atraso alterando a 
+                                velocidade do motor da fita. Isso produziu uma mudança de tom, pois a parte já gravada agora era tocada em uma velocidade 
+                                diferente. A afinação volta ao normal quando a peça gravada na nova velocidade atinge a cabeça de reprodução. Emulamos esse 
+                                comportamento no controle de tempo de atraso.
+                            </p><br>
+                            <p>
+                                <h4>Delay Modulation</h4> Usando um Oscilador de Baixa Frequência (LFO) e uma forma de onda triangular para controlar o tempo 
+                                de atraso, o Delay Modulation produz efeitos que variam de flanging e chorus à modulação de frequência. O tempo de oscilação 
+                                pode ser definido usando um valor Hz, um múltiplo de BPM ou um valor de nota, por exemplo, 1/4 de nota, 1/8 de nota, 1/16 
+                                de nota, etc.
+                            </p><br>
+                            <p>
+                                <h4>Ping Pong Delay</h4> Um efeito estéreo que soa como se o sinal de entrada estivesse saltando entre os canais de saída 
+                                esquerdo e direito, o Ping Pong Delay é obtido usando duas linhas de atraso que alimentam uma à outra, em vez de se 
+                                alimentarem como no modo de atraso estéreo normal. Este efeito requer um valor de Feedback maior que 1.
+                            </p><br>
+                            <p>
+                                <h4>LoFi</h4> Nos primeiros dispositivos de delay digital, a taxa de amostragem era frequentemente reduzida para permitir 
+                                maiores valores de atraso usando o mesmo chip de memória, causando uma redução na faixa de frequência. No modo LoFi, o Echo Jungle 
+                                emula esse comportamento, enquanto o intervalo de tempo de atraso permanece o mesmo.
+                            </p><br>
+                            <p>
+                                <h4>Analog</h4> Escolha entre 4 modos analógicos que correspondem às qualidades de som geralmente associadas e percebidas 
+                                como som analógico.
+                            </p><br>
+                        </p>
+                    </article>
+
+            </div>
+            
+        
+        </div>
+
+    </main>
+    
+</body>
+
+</head>
+</html>
